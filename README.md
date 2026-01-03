@@ -23,3 +23,8 @@ Implemented an efficient two-pointer approach to reverse the entire way in-place
 Problem-4  :- Reverse an array from a specific index
 
 Extended the logic to reverse elements starting from a given position, which required careful index handling and reinforced my understanding of array boundaries and pointer movements.
+
+Problem -5  :- Merge two sorted array
+
+Using the two pointers approach, merged two arrays into one.
+
