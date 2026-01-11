@@ -1,3 +1,4 @@
+// In this question we're given an array of integers and a target value, we need to find the two numbers such that they add up to the target value and return their indices.
 <include iostream.io>
 using namespace std;
 
