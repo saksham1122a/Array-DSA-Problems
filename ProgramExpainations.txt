@@ -1,0 +1,30 @@
+Kadane’s Algorithm (Maximum Subarray Sum)
+
+Problem Statement: -
+
+You are given numbers (positive + negative).
+You must find the largest sum you can get by taking numbers continuously. 
+
+Example
+[-2, 1, -3, 4, -1, 2, 1]
+
+Best part is:
+
+[4, -1, 2, 1] → sum = 6
+
+            Idea: -
+
+Imagine you are adding numbers one by one.
+If your sum becomes negative, it’s useless
+A negative sum will only make the next sum smaller
+So when sum becomes negative, throw it away and start fresh
+
+That’s Kadane’s Algorithm.
+
+            Step-by-Step Thinking
+
+Start with the first number
+Keep adding numbers
+If the sum becomes worse than just taking the current number alone → restart
+Keep track of the best sum ever
+
