@@ -28,3 +28,23 @@ Keep adding numbers
 If the sum becomes worse than just taking the current number alone → restart
 Keep track of the best sum ever
 
+Logic Code: - 
+
+int currentSum = nums[0]; currentSum → sum we are building right now
+int maxSum = nums[0];  maxSum → best sum we have ever seen
+
+for(int i = 1; i < nums.size(); i++)   We go through numbers one by one
+
+currentSum = max(nums[i], currentSum + nums[i]);
+This means: “Should I continue adding, or start fresh from here?”
+
+Example:
+        currentSum = -3
+        nums[i] = 5
+
+        max(5, -3 + 5) = 5 is greator
+So we start fresh.
+
+maxSum = max(maxSum, currentSum);   Just store the best sum we have found.
+return maxSum;
+
